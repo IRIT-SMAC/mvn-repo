@@ -29,11 +29,11 @@
 
 	<repositories>
 		<repository>
-			<id>IRIT-SMAC-agent-tooling-releases</id>
+			<id>IRIT-SMAC-mvn-repo-releases</id>
 			<url>https://github.com/IRIT-SMAC/mvn-repo/raw/master/releases</url>
 		</repository>
 		<repository>
-			<id>IRIT-SMAC-agent-tooling-snapshots</id>
+			<id>IRIT-SMAC-mvn-repo-snapshots</id>
 			<url>https://github.com/IRIT-SMAC/mvn-repo/raw/master/snapshots</url>
 		</repository>
 	</repositories>
@@ -71,6 +71,7 @@
 				<artifactId>site-maven-plugin</artifactId>
 				<version>0.11</version>
 				<configuration>
+					<merge>true</merge>
 					<message>Maven artifacts for ${project.version}</message>  <!-- git commit message -->
 					<noJekyll>true</noJekyll>                                  <!-- disable webpage processing -->
 					<merge>true</merge>
